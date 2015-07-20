@@ -1,8 +1,8 @@
 <?php
+namespace zKillAPI;
+
 require('cache.class.php');
 require('urlbuilder.class.php');
-
-namespace zKillAPI;
 
 class zKill
 {
