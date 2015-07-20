@@ -91,14 +91,12 @@ class KillMail
 	
 	private function getFinalBlow()
 	{
-		$final = null;
-		
 		foreach($this->kill->attackers as $attacker)
 		{
 			if($attacker->finalBlow == 1)
-				$final = $attacker;
+				return $attacker;
 		}
 		
-		return $final;
+		return null;
 	}
 }
