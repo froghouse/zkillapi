@@ -12,7 +12,7 @@
 				<th>Final Blow</th>
 			</thead>
 <?php
-	require_once('zkillapi/zkillapi.php');
+	require_once('zkillapi.php');
 	
 	$zkill = new \zKillAPI\zKill(<corporation ID>, <alliance ID>);
 	
