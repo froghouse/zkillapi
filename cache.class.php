@@ -1,7 +1,7 @@
 <?php
-require('file.class.php');
-
 namespace zKillAPI;
+
+require('file.class.php');
 
 class Cache
 {
