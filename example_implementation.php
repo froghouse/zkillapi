@@ -14,15 +14,14 @@
 <?php
 	require_once('zkillapi.php');
 	
-	// Just insert your corporation ID and alliance ID here
+	// Just insert your corporation ID and alliance ID of interest here
 	$zkill = new \zKillAPI\zKill(<corporation ID>, <alliance ID>);
 	
 	foreach($zkill->get() as $kill)
 	{
 		$killmail = new \zKillAPI\KillMail($kill);
 		
-		// Only show player kills and only show kills made by your alliance
-		if(strlen($killmail->getVictimName()) && $killmail->getKillerAllianceID() == \zKillAPI\zKill::$allianceID)
+		if($killmail->isPlayerKill() && $killmail->getKillerAllianceID() == \zKillAPI\zKill::$allianceID)
 		{
 			echo "<tr";
 			
