@@ -1,7 +1,7 @@
 <?php
-require('zkill.class.php');
-
 namespace zKillAPI;
+
+require('zkill.class.php');
 
 class KillMail
 {
@@ -87,6 +87,24 @@ class KillMail
 		
 		$url = new URLBuilder("https", "image.eveonline.com", array("Type", $shipID . "_64.png"));
 		return "<img src=\"" . $url->get() . "\" class=\"" . $this->getShipImageClass($victim) . "\">";
+	}
+	
+	public function getVictimShipImage()
+	{
+		return $this->getShipImage(true);
+	}
+	
+	public function getKillerShipImage()
+	{
+		return $this->getShipImage(false);
+	}
+	
+	public function isPlayerKill()
+	{
+		if(strlen($this->getVictimName()))
+			return true;
+		
+		return false;
 	}
 	
 	private function getFinalBlow()
