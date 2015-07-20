@@ -1,6 +1,8 @@
 <?php
 require('file.class.php');
 
+namespace zKillAPI;
+
 class Cache
 {
 	private $cache;
