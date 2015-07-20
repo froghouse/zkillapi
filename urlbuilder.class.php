@@ -1,4 +1,7 @@
 <?php
+
+namespace zKillAPI;
+
 class URLBuilder
 {
 	private $proto;
