@@ -14,6 +14,7 @@
 <?php
 	require_once('zkillapi.php');
 	
+	// Just insert your corporation ID and alliance ID here
 	$zkill = new \zKillAPI\zKill(<corporation ID>, <alliance ID>);
 	
 	foreach($zkill->get() as $kill)
