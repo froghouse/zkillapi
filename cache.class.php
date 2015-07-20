@@ -13,7 +13,7 @@ class Cache
 		$opts = array(
 		  'ssl'=>array(
 			'method'=>"GET",
-			'header'=>"User-Agent: http://redveng.com/ Maintainer: Tomas Landberg Email: tomas.landberg@gmail.com\r\nAccept-Encoding: gzip"
+			'header'=>"User-Agent: <your info here>\r\nAccept-Encoding: gzip"
 		  )
 		);
 		
