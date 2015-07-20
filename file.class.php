@@ -1,3 +1,4 @@
+<?php
 namespace zKillAPI;
 
 class File
