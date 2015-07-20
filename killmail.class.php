@@ -1,6 +1,8 @@
 <?php
 require('zkill.class.php');
 
+namespace zKillAPI;
+
 class KillMail
 {
 	private $kill;
