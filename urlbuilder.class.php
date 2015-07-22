@@ -2,20 +2,21 @@
 
 namespace zKillAPI;
 
+// Patches URLs together and makes sure they are well formatted
 class URLBuilder
 {
-	private $proto;
-	private $url;
-	private $path;
+	protected $proto;
+	protected $url;
+	protected $path;
 	
-	public function __construct($pr, $ur, $pa = array())
+	public function __construct($pr, $ur, $pa = [])
 	{
 		$this->proto = $pr;
 		$this->url = $ur;
 		$this->path = $pa;
 	}
 	
-	private function buildPath()
+	protected function buildPath()
 	{
 		$ret = "";
 		
