@@ -53,7 +53,7 @@ class zKillAPILimitModifiers extends zKillAPITakesModifier
 class zKillAPIFetchType extends zKillAPITakesNoModifier
 {
 	const Kills = "kills";
-	const losses = "losses";
+	const Losses = "losses";
 	const WSpace = "w-space";
 	const Solo = "solo";
 }
